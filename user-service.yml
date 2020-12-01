@@ -1,1 +1,36 @@
+server:
+  port: 8081 # dfeault 8080
+  
+spring:
+  profiles:
+    active: test
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: ${db_url}
+    username: ${db_username}
+    password: ${db_pass}
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
+    hibernate:
+      ddl-auto: none
+  aop:
+    auto: true
 
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 1
+    leaseExpirationDurationInSeconds: 2
+  client:
+    service-url:
+      defaultZone: ${eureka_url}
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
