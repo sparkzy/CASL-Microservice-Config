@@ -1,8 +1,7 @@
 server:
   port: 8081 # dfeault 8080
   
-my:
-  greeting: Hello, from the user config server
+greeting: Hello, from the user config server
   
 spring:
   profiles:
