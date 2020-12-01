@@ -4,10 +4,6 @@ server:
 spring:
   profiles:
     active: test
-  datasource:
-    url: ${db_url}
-    username: ${db_username}
-    password: ${db_pass}
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
     properties:
