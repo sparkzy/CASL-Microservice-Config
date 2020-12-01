@@ -4,11 +4,11 @@ server:
 spring:
   profiles:
     active: test
-  datasource:
-    driver-class-name: oracle.jdbc.driver.OracleDriver
-    url: ${db_url}
-    username: ${db_username}
-    password: ${db_pass}
+  #datasource:
+  #  driver-class-name: oracle.jdbc.driver.OracleDriver
+  #  url: ${db_url}
+  #  username: ${db_username}
+  #  password: ${db_pass}
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
     properties:
