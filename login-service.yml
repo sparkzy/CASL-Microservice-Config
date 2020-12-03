@@ -1,5 +1,5 @@
 server:
-  port: 8082 # dfeault 8080
+  port: 8081 # dfeault 8080
   
 spring:
   profiles:
@@ -15,11 +15,18 @@ spring:
       ddl-auto: none
   aop:
     auto: true
+  datasource:
+    url: ${db_url}
+    username: ${db_username}
+    password: ${db_pass}
 
 eureka:
   instance:
     leaseRenewalIntervalInSeconds: 1
     leaseExpirationDurationInSeconds: 2
+  client:
+    service-url:
+      defaultZone: ${eureka_url}
       
 management:
   endpoints:
