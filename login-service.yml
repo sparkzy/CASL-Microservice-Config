@@ -4,21 +4,6 @@ server:
 spring:
   profiles:
     active: test
-  jpa:
-    database-platform: org.hibernate.dialect.Oracle10gDialect
-    properties:
-      hibernate:
-        show_sql: true
-        use_sql_comments: true
-        format_sql: true
-    hibernate:
-      ddl-auto: none
-  aop:
-    auto: true
-  datasource:
-    url: ${db_url}
-    username: ${db_username}
-    password: ${db_pass}
 
 eureka:
   instance:
