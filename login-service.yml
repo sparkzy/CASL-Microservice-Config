@@ -13,6 +13,11 @@ eureka:
     service-url:
       defaultZone: ${eureka_url}
       
+messaging:
+  queue: "user_queue"
+  exchange: "user_exchange"
+  routing_key: "user_routingkey"
+      
 management:
   endpoints:
     web:
