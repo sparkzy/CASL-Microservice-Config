@@ -16,7 +16,7 @@ eureka:
 messaging:
   queue: "user_queue"
   exchange: "user_exchange"
-  routing_key: "user_routingkey:
+  routing_key: "user_routingkey"
       
 management:
   endpoints:
