@@ -29,7 +29,9 @@ eureka:
       defaultZone: ${eureka_url}
       
 messaging:
-  queue: "user_queue"
+  queues: user_queue
+  exchanges: user_exchange
+  routing_keys: user_routingkey
       
 management:
   endpoints:
