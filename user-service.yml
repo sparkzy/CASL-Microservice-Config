@@ -30,14 +30,14 @@ eureka:
       
 messaging:
   queues:
-    user: user_queue
-    login: login_queue
+    user: "user_queue"
+    login: "login_queue"
   exchanges:
-    user: user_queue
-    login: login_queue
+    user: "user_queue"
+    login: "login_queue"
   routing_keys:
-    user: user_queue
-    login: login_queue
+    user: "user_queue"
+    login: "login_queue"
       
 management:
   endpoints:
