@@ -27,6 +27,17 @@ eureka:
   client:
     service-url:
       defaultZone: ${eureka_url}
+
+messaging:
+  queues:
+    user: user_queue
+    login: login_queue
+  exchanges:
+    user: user_queue
+    login: login_queue
+  routing_keys:
+    user: user_queue
+    login: login_queue
       
 management:
   endpoints:
