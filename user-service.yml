@@ -44,7 +44,3 @@ management:
     web:
       exposure:
         include: "*"
-
-logging:
-  level:
-    root: debug
