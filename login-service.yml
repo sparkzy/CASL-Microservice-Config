@@ -14,9 +14,7 @@ eureka:
       defaultZone: ${eureka_url}
       
 messaging:
-  queues:
-    - user_queue
-    - login_queue
+  queues: user_queue, login_queue
   exchanges:
     - user_exchange
     - login_exchange
