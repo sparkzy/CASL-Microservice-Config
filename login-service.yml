@@ -14,7 +14,7 @@ eureka:
       defaultZone: ${eureka_url}
       
 messaging:
-  prefix: login
+  prefix: user
       
 management:
   endpoints:
